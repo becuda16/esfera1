@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Fundo escuro para destacar a esfera */
+}
+
+.esfera {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    /* Cor inicial azul com efeito de profundidade */
+    background: radial-gradient(circle at 65% 15%, white 1px, #007bff 3%, #000 60%, #007bff 100%);
+    
+    /* Sombra externa para dar peso ao objeto */
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+    
+    /* Suaviza a transição de cores */
+    transition: background 0.4s ease-out;
+}
